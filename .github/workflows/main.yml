@@ -32,7 +32,7 @@ jobs:
     - name: Contensis block push action
       uses: contensis/block-push@v1
       with:
-        block-id: ai_comment
+        block-id: aicomment
         alias: chesheast
         project-id: centranet
         image-uri: cewebteam/aicomment:${{ github.run_number }}
