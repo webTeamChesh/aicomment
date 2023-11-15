@@ -3,7 +3,6 @@ import express from 'express';
 import cors from 'cors';
 import { v4 as uuidv4 } from 'uuid';
 import { NodejsClient } from 'contensis-management-api/lib/client/nodejs-client.js';
-
 //import {} from 'dotenv/config';
 
 // Set some variables.
