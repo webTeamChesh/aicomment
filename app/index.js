@@ -40,7 +40,7 @@ app.use(cors());
 app.use(myLogger);
 
 // Routes
-app.post('/', (req, res) => {
+app.post('/*', (req, res) => {
   let entry = req.body;
   entry.sys = {
     id: uuidv4(),
