@@ -34,7 +34,7 @@ jobs:
       with:
         block-id: aicomment
         alias: chesheast
-        project-id: centranet
+        project-id: website
         image-uri: cewebteam/aicomment:${{ github.run_number }}
         client-id: ${{ secrets.CLIENT_ID }}
         shared-secret: ${{ secrets.SHARED_SECRET }}
