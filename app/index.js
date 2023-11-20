@@ -39,8 +39,8 @@ app.use(myLogger);
 
 // Routes
 app.get('/*', (req, res) => {
-
   let entry = JSON.parse(req.query.entry);
+  console.log(entry.name);
   entry.sys = {
     id: uuidv4(),
     contentTypeId: 'prosandcons',
