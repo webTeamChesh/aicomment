@@ -38,9 +38,9 @@ app.use(cors());
 app.use(myLogger);
 
 // Routes
-app.post('/api/addaicomment', (req, res) => {
+app.post('/*', (req, res) => {
   let entry = req.body;
-  console.log(entry.name);
+  console.log(`Got a comment from ${entry.name}`);
   entry.sys = {
     id: uuidv4(),
     contentTypeId: 'prosandcons',
