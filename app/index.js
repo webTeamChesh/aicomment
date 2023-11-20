@@ -39,9 +39,7 @@ app.use(myLogger);
 
 // Routes
 app.get('/*', (req, res) => {
-  if (!req.query.entry) {
-    res.status(404).end();
-  };
+
   let entry = JSON.parse(req.query.entry);
   entry.sys = {
     id: uuidv4(),
