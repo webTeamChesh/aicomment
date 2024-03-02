@@ -19,6 +19,10 @@ const client = NodejsClient.create({
   rootUrl: ROOT_URL,
 });
 
+// Optionally log all the environment variables.
+let env = Object.keys(process.env).map(k => `${k}: ${process.env[k]}`);
+env.sort();
+env.forEach((e) => console.log(e));
 // Start the server.
 const app = express();
 app.listen(port, () => {
